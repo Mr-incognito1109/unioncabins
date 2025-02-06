@@ -38,7 +38,7 @@ const Contact = () => {
             <p>Feel free to reach out through contact form or find our contact information below. Your feedback, questions, and suggestions are important to us as we strive to provide exceptional service.</p>
             <ul>
                 <li><Mail className='l_icon'/>  unioncabins@gmail.com</li>
-                <li><Phone className='l_icon'/>  +91 9987236011 | +91 87937 05946</li>
+                <li><Phone className='l_icon'/>  +91 86520 05010 | +91 87937 05946</li>
                 <li><MapPinHouse className='l_icon'/>  Shop No. E03, Vijay Nagar,<br/> Nallasopara (E) - 401 209</li>
             </ul>
         </div>

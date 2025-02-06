@@ -27,11 +27,11 @@ const Hero = () => {
     <div 
       className="hero container"
       style={{
-        backgroundImage: `linear-gradient(rgba(27, 16, 11, 0.72), rgba(27, 16, 11, 0.72)), url(${images[currentImageIndex]})`,
+        backgroundImage: `linear-gradient(rgba(69, 58, 54, 0.72), rgba(69, 58, 54, 0.72)), url(${images[currentImageIndex]})`,
       }}
     >
       <div className="hero-text">
-        <h1>Portable solutions crafted for work, security, and beyond.</h1>
+        <h1> Your Space, Anytime, Anywhere!</h1>
         <p>Smart, durable, and portable cabins designed for offices, security, or custom needs. Adaptable spaces that deliver functionality and flexibility anywhere.</p>
         <Link 
           to="contact" 

@@ -1,6 +1,6 @@
 import React from 'react';
 import './ClientSatisfaction.css';
-import clientSatisfactionImage from '../../assets/Hero1.jpeg';
+import clientSatisfactionImage from '../../assets/client_satisfaction.jpg';
 
 const ClientSatisfaction = () => {
     return (

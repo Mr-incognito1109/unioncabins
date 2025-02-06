@@ -15,7 +15,7 @@ const Footer = () => {
           <h3>Contact Us</h3>
           <p>Shop No. E03, Vijay Nagar,</p>
           <p>Nallasopara (E) - 401 209</p>
-          <p>+91 9987236011 | +91 9322211419</p>
+          <p>+91 8652005010 | +91 9322211419</p>
         </div>
 
         <div className="footer-section social-links">

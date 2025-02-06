@@ -4,7 +4,7 @@ import whatsappIcon from '../../assets/whatsapp.png';
 import './CAndW.css';
 
 const CAndW = () => {
-  const phoneNumber = '+919987236011';
+  const phoneNumber = '+918652005010';
   const whatsappMessage = 'Hello! I am interested in your products.';
   const email = 'info@unioncabins.com';
 

@@ -1,31 +1,28 @@
 .about-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   padding: 60px 40px;
-  background-color: #F7F3EB;
+  background-color: #f7f3eb;
   max-width: 1200px;
   margin: 0 auto;
   flex-wrap: wrap;
 }
 
-.about-info {
+.content {
   flex: 1;
-  padding: 40px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  max-width: 600px;
+  margin-right: 20px;
 }
 
-.about-info h2 {
+.content h2 {
   font-size: 2.5rem;
-  margin-bottom: 25px;
-  color: #1B100B;
-  font-weight: 600;
+  color: #333;
+  margin-bottom: 20px;
   position: relative;
 }
 
-.about-info h2:after {
+.content h2:after {
   content: '';
   position: absolute;
   left: 0;
@@ -35,43 +32,54 @@
   background-color: #FFA54E;
 }
 
-.about-info p {
+.content p {
   font-size: 1.1rem;
   line-height: 1.8;
-  color: #4A4A4A;
+  color: #4a4a4a;
 }
 
-.about-image {
+.image-container {
   flex: 1;
-  min-height: 400px;
-  position: relative;
-  overflow: hidden;
+  max-width: 600px;
+  text-align: center;
 }
 
-.about-image img {
+.image-container img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  position: absolute;
-  transition: transform 0.5s ease;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.get-price-button {
+  padding: 12px 24px;
+  background-color: #FFA54E;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease;
+}
+
+.get-price-button:hover {
+  background-color: #ff913a;
 }
 
 @media (max-width: 768px) {
   .about-container {
     flex-direction: column;
+    align-items: center;
   }
-  
-  .about-info {
-    padding: 30px;
+
+  .content {
+    margin-right: 0;
+    margin-bottom: 20px;
+    text-align: center;
   }
-  
-  .about-image {
-    min-height: 300px;
-    order: 2; /* Ensure image is below text */
-    position: relative; /* Ensure image is visible */
-  }
-  
-  .about-image img {
-    position: static; /* Ensure image is visible */
+
+  .image-container {
+    max-width: 100%;
   }
 }
