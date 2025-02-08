@@ -22,19 +22,20 @@ const CAndW = () => {
 
   return (
     <div className="floating-buttons">
+
+      <button 
+        className="floating-button call-button"
+        onClick={handleCall}
+        aria-label="Call Us"
+      >
+        <Phone size={24} className='phone-icon'/>
+      </button>
       <button 
         className="floating-button message-button"
         onClick={handleMessage}
         aria-label="Message Us"
       >
         <MessageSquare size={24} />
-      </button>
-      <button 
-        className="floating-button call-button"
-        onClick={handleCall}
-        aria-label="Call Us"
-      >
-        <Phone size={24} />
       </button>
       <button 
         className="floating-button whatsapp-button"

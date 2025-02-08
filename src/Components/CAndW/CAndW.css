@@ -19,6 +19,8 @@
   cursor: pointer;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease;
+  overflow: hidden;
+  position: relative;
 }
 
 .floating-button:hover {
@@ -26,17 +28,89 @@
 }
 
 .call-button {
-  background-color: #FFA54E;
+  background-color: #ffa54e;
   color: white;
+  box-shadow: 0 0 10px rgba(255, 165, 78, 0.7); /* Initial outer glow */
+  animation: wave-glow 2s infinite ease-out;
+}
+
+.call-button::before {
+  /* Ripple effect */
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center the pseudo-element */
+  width: 150%; /* Larger than the button */
+  height: 150%; /* Larger than the button */
+  background-color: rgba(255, 255, 255, 0.3); /* Semi-transparent white */
+  border-radius: 50%; /* Match the button's shape */
+  opacity: 0; /* Initially hidden */
+  animation: ripple 2s linear infinite; /* Animate the ripple */
+}
+
+@keyframes wave-glow {
+  0% {
+    box-shadow: 0 0 10px rgba(255, 165, 78, 0.7); /* Outer glow */
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(255, 165, 78, 0.9),
+      /* Outer glow + stronger inner glow */ 0 0 10px rgba(255, 165, 78, 0.4); /* Additional inner glow */
+  }
+  100% {
+    box-shadow: 0 0 10px rgba(255, 165, 78, 0.7); /* Back to outer glow */
+  }
+}
+
+@keyframes ripple {
+  0% {
+    transform: translate(-50%, -50%) scale(0); /* Start small */
+    opacity: 1; /* Fade in */
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1); /* Expand to full size */
+    opacity: 0; /* Fade out */
+  }
+}
+
+.phone-icon {
+  animation: shake-new 1.5s infinite linear;
+}
+
+@keyframes shake-new {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(30deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(-30deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes glow {
+  from {
+    box-shadow: 0 0 5px rgba(255, 165, 78, 0.5);
+  }
+  to {
+    box-shadow: 0 0 20px rgba(255, 165, 78, 1);
+  }
 }
 
 .whatsapp-button {
-  background-color: #25D366;
+  background-color: #25d366;
   padding: 12px;
 }
 
 .message-button {
-  background-color: #007AFF;
+  background-color: #007aff;
   color: white;
 }
 

@@ -73,7 +73,7 @@ const ProductDetails = () => {
           )}
 
           <div className="button-group">
-            <button className="enquiry-button" onClick={() => window.location.href = 'tel:+919987236011 '}>
+            <button className="enquiry-button" onClick={() => window.location.href = 'tel:+918652005010'}>
               <Phone size={20} />
               Enquire Now!
             </button>

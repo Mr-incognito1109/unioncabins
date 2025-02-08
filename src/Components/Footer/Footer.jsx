@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="footer-content">
         <div className="footer-section company-info">
           <h3>UnionCabins</h3>
-          <p>Experience nature's luxury in our handcrafted wooden cabins.</p>
+          <p>Experience nature's luxury in our handcrafted cabins.</p>
         </div>
 
         <div className="footer-section contact-info">

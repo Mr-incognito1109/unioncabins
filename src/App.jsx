@@ -15,7 +15,7 @@ import ProductDetails from './Components/ProductDetails/ProductDetails';
 import { products } from './data/productData';
 import CAndW from './Components/CAndW/CAndW';
 import NotFound from './Components/NotFound/NotFound';
-import ScrollTop from './Components/ScrollTop/ScrollTop';
+// import ScrollTop from './Components/ScrollTop/ScrollTop';
 import ClientSatisfaction from './Components/ClientSatisfaction/ClientSatisfaction';
 
 
@@ -37,7 +37,6 @@ const HomePage = () => (
 const App = () => {
   return (
     <Router>
-    <ScrollTop />
       <Navbar/>
       <Routes>
         <Route path="/" element={<HomePage/>} />

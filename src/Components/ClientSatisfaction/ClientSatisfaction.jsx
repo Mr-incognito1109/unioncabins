@@ -5,7 +5,7 @@ import clientSatisfactionImage from '../../assets/client_satisfaction.jpg';
 const ClientSatisfaction = () => {
     return (
         <div className="client-satisfaction">
-            <div className="content">
+            <div className="client-content">
                 <h2>Client Satisfaction</h2>
                 <p>
                     Client satisfaction is at the heart of everything we do, and our commitment to excellence ensures 

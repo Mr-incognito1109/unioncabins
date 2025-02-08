@@ -27,7 +27,7 @@ const Hero = () => {
     <div 
       className="hero container"
       style={{
-        backgroundImage: `linear-gradient(rgba(69, 58, 54, 0.72), rgba(69, 58, 54, 0.72)), url(${images[currentImageIndex]})`,
+        backgroundImage: `linear-gradient(rgba(72, 53, 45, 0.54), rgba(72, 53, 45, 0.54)), url(${images[currentImageIndex]})`,
       }}
     >
       <div className="hero-text">

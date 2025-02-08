@@ -25,16 +25,16 @@ const Navbar = () => {
   }
 
   return (
-    <nav className={`container ${sticky ? 'dark-nav' : ''}`}>
+    <nav className={`nav-container ${sticky ? 'dark-nav' : ''}`}>
       <RouterLink to="/"><img src={logo} alt='Union Cabins Logo' className='logo' /></RouterLink>
       <ul className={mobileMenu ?'' : 'hide-mobile-menu'}>
         {isHomePage ? (
           <>
-            <li><Link to="home" spy={true} smooth={true} duration={500}>Home</Link></li>
-            <li><Link to="about" spy={true} smooth={true} duration={500}>About</Link></li>
-            <li><Link to="products" spy={true} smooth={true} duration={500}>Products</Link></li>
+            <li><Link to="hero" spy={true} smooth={true} offset={0} duration={500}>Home</Link></li>
+            <li><Link to="about-container" spy={true} smooth={true} offset={-185} duration={500}>About</Link></li>
+            <li><Link to="products" spy={true} smooth={true} offset={-80} duration={500}>Products</Link></li>
             <li><RouterLink to="/gallery">Gallery</RouterLink></li>
-            <li><Link to="contact" spy={true} smooth={true} duration={500} className='btn'>Contact</Link></li>
+            <li><Link to="contact" spy={true} smooth={true} offset={-240} duration={500} className='btn'>Contact</Link></li>
           </>
         ) : (
           <>

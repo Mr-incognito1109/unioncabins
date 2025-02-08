@@ -13,6 +13,11 @@ nav {
     z-index: 10;
 }
 
+.nav-container {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
 .logo {
     width: 300px;
 }
