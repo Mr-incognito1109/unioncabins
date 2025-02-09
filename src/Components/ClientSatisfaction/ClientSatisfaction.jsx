@@ -3,6 +3,12 @@ import './ClientSatisfaction.css';
 import clientSatisfactionImage from '../../assets/client_satisfaction.jpg';
 
 const ClientSatisfaction = () => {
+
+    const phoneNumber = +918652005010
+
+    const handleCall = () => {
+        window.location.href = `tel:${phoneNumber}`;
+    }
     return (
         <div className="client-satisfaction">
             <div className="client-content">
@@ -19,7 +25,7 @@ const ClientSatisfaction = () => {
             </div>
             <div className="image-container">
                 <img src={clientSatisfactionImage} alt="Client Satisfaction" />
-                <button className="get-price-button">Get Best Price</button>
+                <button className="get-price-button" onClick={handleCall}>Get Best Price</button>
             </div>
         </div>
     );

@@ -32,6 +32,10 @@
   color: white;
   box-shadow: 0 0 10px rgba(255, 165, 78, 0.7); /* Initial outer glow */
   animation: wave-glow 2s infinite ease-out;
+  right: 10px;
+  width : 65px;
+  height: 65px;
+  
 }
 
 .call-button::before {
