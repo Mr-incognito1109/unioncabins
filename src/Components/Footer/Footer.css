@@ -62,6 +62,12 @@ hr {
   margin-top: 10px;
 }
 
+.gst-info {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
 /* media query */
 
 @media (max-width: 768px) {

@@ -9,12 +9,13 @@ const Footer = () => {
         <div className="footer-section company-info">
           <h3>UnionCabins</h3>
           <p>Experience nature's luxury in our handcrafted cabins.</p>
+          <p className="gst-info">GST: 27JXYPS4531N1Z6</p>
         </div>
 
         <div className="footer-section contact-info">
           <h3>Contact Us</h3>
-          <p>Shop No. E03, Vijay Nagar,</p>
-          <p>Nallasopara (E) - 401 209</p>
+          <p>Pimpari goan, besides sai baba waight brigh,</p>
+          <p>Dahisar mori , Maharashtra 400612</p>
           <p>+91 8652005010 | +91 9322211419</p>
         </div>
 

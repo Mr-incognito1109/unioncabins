@@ -134,4 +134,15 @@
     width: 45px;
     height: 45px;
   }
+
+  .call-button {
+    width: 55px;    /* Slightly larger than other buttons */
+    height: 55px;   /* Slightly larger than other buttons */
+    right: 0;       /* Reset the right offset */
+  }
+  
+  .phone-icon {
+    width: 20px;    /* Make the icon slightly smaller */
+    height: 20px;
+  }
 }
