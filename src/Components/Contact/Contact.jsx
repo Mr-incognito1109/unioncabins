@@ -39,7 +39,7 @@ const Contact = () => {
             <ul>
                 <li><Mail className='l_icon'/>  unioncabins@gmail.com</li>
                 <li><Phone className='l_icon'/>  +91 86520 05010 | +91 87937 05946</li>
-                <li><MapPinHouse className='l_icon'/>  Shop No. E03, Vijay Nagar,<br/> Nallasopara (E) - 401 209</li>
+                <li><MapPinHouse className='l_icon'/> Pimpari goan, besides sai baba waight brigh,<br/>Dahisar mori , Maharashtra 400612</li>
             </ul>
         </div>
         <div className='contact-col'>
